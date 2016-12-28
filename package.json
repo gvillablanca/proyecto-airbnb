@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-airbnb",
+  "version": "1.0.0",
+  "description": "proyecto airbnb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sassy-girls",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-code": "^1.0.1",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1",
+    "live-refresh": "^2.0.0"
+  },
+  "dependencies": {
+    "materialize-css": "^0.97.8",
+    "sass": "^0.5.0",
+    "select2": "^4.0.3"
+  }
+}
