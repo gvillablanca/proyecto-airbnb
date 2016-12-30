@@ -2,17 +2,147 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">	
-    <title>Airbnb</title>
-    <link rel="shortcut icon" href="src/img/favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/main.css">	
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <title>Airbnb</title>
+  <link rel="shortcut icon" href="src/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.min.css">	
 </head>
 <body>
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-
+  <header>
+   <nav>
+    <div class="nav-wrapper">
+      <a href="#"><img src="src/img/favicon.ico"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Conviértete en anfitrión</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Regístrate</a></li>
+        <li><a href="#">Iniciar sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<section>
+ <div class="main">
+  <div class="slider-outer">
+    <div class="slider">
+      <div class="slide-item"><span class="slide-image" style="background-image: url(src/img/Captura1.jpg);"></span></div>
+      <div class="slide-item"><span class="slide-image" style="background-image: url(src/img/Captura2.jpg);"></span></div>
+      <div class="slide-item"><span class="slide-image" style="background-image: url(src/img/Captura3.jpg);"></span></div>
+      <div class="slide-item"><span class="slide-image" style="background-image: url(src/img/Captura4.jpg);"></span></div>
+    </div>
+  </div>
+</div>
+</section>
+<div class="container">
+  <section>
+    <div class="row mseleccion">
+      <div class="col s4">
+        <label for="first_name">Dónde</label>
+        <input placeholder="Destino, Ciudad, Dirección" id="first_name" type="text" class="validate">
+      </div>
+      <div class="col s4 fechas">
+        <div class="col s6">
+          <label for="first_name">Llegada</label>
+          <input type="date" class="datepicker">
+        </div>
+        <div class="col s6">
+          <label for="first_name">Salida</label>
+          <input type="date" class="datepicker">
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="col s6">
+          <label for="first_name">Huéspedes</label>
+          <select>
+            <option value="" disabled selected>Nº de Huéspedes</option>
+            <option value="1">1 Huésped</option>
+            <option value="2">2 Huéspedes</option>
+            <option value="3">3 Huéspedes</option>
+          </select>
+        </div>
+        <div class="col s6">
+          <a href="busqueda.html" class="waves-effect waves-light btn">Buscar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+  <div class="titulo">Experiencias</div>
+    <main id='slider'>
+  <button class='trigger prev'></button>
+  <button class='trigger next'></button>
+  <section class='frame'>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru1.jpg">
+        <div class="bajada"><span>$23519 CLP</span> Singing & karaoke experience</div>
+        </div>
+      </div>
+    </article>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru2.jpg">
+        <div class="bajada"><span>$83998 CLP</span> Service & building · 2 días</div>
+        </div>
+      </div>
+    </article>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru3.jpg">
+        <div class="bajada"><span>$23519 CLP</span> Singing & karaoke experience</div>
+        </div>
+      </div>
+    </article>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru4.jpg">
+        <div class="bajada"><span>$23519 CLP</span> Singing & karaoke experience</div>
+        </div>
+      </div>
+    </article>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru5.jpg">
+        <div class="bajada"><span>$23519 CLP</span> Singing & karaoke experience</div>
+        </div>
+      </div>
+    </article>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru6.jpg">
+        <div class="bajada"><span>$23519 CLP</span> Singing & karaoke experience</div>
+        </div>
+      </div>
+    </article>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru7.jpg">
+        <div class="bajada"><span>$167996 CLP</span> Lgbt advocacy & neighborhood · 2 días</div>
+        </div>
+      </div>
+    </article>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru8.jpg">
+        <div class="bajada"><span>$23519 CLP</span> Singing & karaoke experience</div>
+        </div>
+      </div>
+    </article>
+    <article class='item'>
+      <div class='inset'>
+        <div class='caption'><img src="src/img/carru9.jpg">
+        <div class="bajada"><span>$23519 CLP</span> Singing & karaoke experience</div>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+  </section>
+</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script type="text/javascript" src="dist/js/script.min.js"></script>
 </body>
 </html>
