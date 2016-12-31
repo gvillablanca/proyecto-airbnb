@@ -10,97 +10,129 @@
   <link rel="stylesheet" href="dist/css/style.min.css"> 
 </head>
 <body>
-<header>
-	<nav class="blanco">
-    <div class="nav-wrapper">
-      <a href="#"><img src="src/img/favicon.ico"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Conviértete en anfitrión</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <li><a href="#">Regístrate</a></li>
-        <li><a href="#">Iniciar sesión</a></li>
-      </ul>
+  <!-- NAVBAR -->
+  <header>
+  	<nav class="blanco">
+      <div class="nav-wrapper">
+        <a href="#"><img src="src/img/favicon.ico"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Conviértete en anfitrión</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Regístrate</a></li>
+          <li><a href="#">Iniciar sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- SELECCION FECHAS LLEGADA, SALIDA, Nº HUESPED -->
+  <div class="row">
+    <div class="col m7">
+      <div class="row seleccion first">
+        <div class="col s3 texto">
+          <h6>Fechas</h6>    
+        </div>
+        <div class="col m3">
+          <input type="date" class="datepicker" placeholder="Llegada">
+        </div>
+        <div class="col m3">
+          <input type="date" class="datepicker" placeholder="Salida">
+        </div>
+        <div class="col m3">
+          <select class="browser-default">
+            <option value="" disabled selected>Nº de Huéspedes</option>
+            <option value="1">1 Huésped</option>
+            <option value="2">2 Huéspedes</option>
+            <option value="3">3 Huéspedes</option>
+            <option value="3">4 Huéspedes</option>
+            <option value="3">5 Huéspedes</option>
+            <option value="3">6 Huéspedes</option>
+            <option value="3">7 Huéspedes</option>
+          </select>
+        </div>    
+      </div>
     </div>
-  </nav>
-</header>
-<div class="row">
-<div class="col s7">
-<div class="row seleccion">
-    <div class="col s3 texto">
-    Fechas    
+  </div>
+  <!-- SELECCION TIPO DE HABITACION -->
+  <div class="row">
+    <div class="col m7">
+      <div class="row seleccion">
+        <div class="col m3 texto">
+          <h6>Tipo de habitación</h6>    
+        </div>
+        <div class="col m3">
+          <div class="bg-gray center-align">
+            <div>
+              <i class="material-icons">&#xE88A;</i>
+              <span>Casa Entera</span>
+              <input type="checkbox" id="test1" />
+              <label for="test1"></label>      
+            </div>
+          </div>
+        </div>
+        <div class="col m3">
+          <div class="bg-gray center-align">
+            <div>
+              <i class="material-icons">&#xE53A;</i>
+              <span>Hab. Privada</span>
+              <input type="checkbox" id="test2" />
+              <label for="test2"></label>      
+            </div>
+          </div>
+        </div>
+        <div class="col m3">
+          <div class="bg-gray center-align">
+            <div>
+              <i class="material-icons">&#xE16B;</i>
+              <span>Hab. Compartida</span>
+              <input type="checkbox" id="test3" />
+              <label for="test3"></label>      
+            </div>
+          </div>
+        </div>     
+      </div>
     </div>
-    <div class="col s3">
-      <input type="date" class="datepicker" placeholder="Llegada">
+  </div>
+
+  <!-- RANGO DE PRECIOS -->
+  <div class="row">
+    <div class="col m7">
+      <div class="row seleccion">
+        <div class="col m3 texto">
+          <h6>Rango de precios</h6>
+        </div>
+        <div class="col m9">
+
+        </div>
+      </div>
     </div>
-    <div class="col s3">
-      <input type="date" class="datepicker" placeholder="Salida">
   </div>
-  <div class="col s3">
-    <select class="browser-default">
-      <option value="" disabled selected>Nº de Huéspedes</option>
-      <option value="1">1 Huésped</option>
-      <option value="2">2 Huéspedes</option>
-      <option value="3">3 Huéspedes</option>
-    </select>
-  </div>
-  </div>
-  <div class="row seleccion">
-    <div class="col s3 texto">
-    Tipo de habitación    
+  <!-- RESERVA -->
+  <div class="row">
+    <div class="col m7">
+      <div class="row seleccion">
+        <div class="col m3">
+          <h6>Reserva inmediata</h6>
+        </div>
+        <div class="col m6">
+          <p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+        </div>
+        <div class="col m3">
+          <div class="switch">
+            <label>
+              Off
+              <input type="checkbox">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>         
+        </div>
+      </div>
     </div>
-    <div class="col s3">
-      <p>
-      <input type="checkbox" class="filled-in" id="filled-in-box"/>
-      <label for="filled-in-box">Casa entera</label>
-    </p>
-    </div>
-    <div class="col s3">
-      <p>
-      <input type="checkbox" class="filled-in" id="filled-in-box"/>
-      <label for="filled-in-box">Habitación Privada</label>
-    </p>
   </div>
-  <div class="col s3">
-  <p>
-      <input type="checkbox" class="filled-in" id="filled-in-box"/>
-      <label for="filled-in-box">Habitación Compartida</label>
-    </p>
-  </div>
-  </div>
-  <div class="row seleccion">
-    <div class="col s3 texto">
-    Rango de precios    
-    </div>
-    <div class="col s9">
 
 
-    
-    </div>
-  </div>
-  <div class="row seleccion">
-    <div class="col s3">
-    Reserva inmediata    
-    </div>
-    <div class="col s6">
-      <p>
-      Anuncios que no requieren que el anfitrión acepte la solicitud.
-    </p>
-  </div>
-  <div class="col s3">
-  <div class="switch">
-    <label>
-      Off
-      <input type="checkbox">
-      <span class="lever"></span>
-      On
-    </label>
-  </div>
-  </div>
-  </div>
-</div>
-<div class="col s5">
-</div>
-</div>
+
+
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 <script type="text/javascript" src="dist/js/script.min.js"></script>

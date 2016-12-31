@@ -1,0 +1,14 @@
+.bg-gray{
+	border: 1px solid $bg;
+	width: 100%;
+	padding: 1rem 0;
+	i{
+		font-size: 15px;
+	}
+	label{
+		margin-bottom: -0.6rem;
+	}
+	span{
+		font-size: 12px;
+	}
+}

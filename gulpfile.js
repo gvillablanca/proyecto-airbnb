@@ -13,15 +13,15 @@ gulp.task('script', function(){
 		.pipe(concat('script.min.js'))
 		.pipe(uglify())
 		// carpeta dist
-		.pipe(gulp.dest('dist/js'));
+		.pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('style', function(){
-	gulp.src('src/sass/main.scss')
+	gulp.src(['src/sass/main.scss', 'src/css/*.css'])
 		.pipe(sass().on('error', sass.logError))
 		.pipe(minifyCSS())
 		.pipe(concat('style.min.css'))
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('dist/css/'));
 });
 
 
