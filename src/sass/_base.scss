@@ -2,122 +2,127 @@ nav{
 	background-color: transparent;
 	box-shadow: none;
 	img{
-		height: 30px;
+		height: 1.8rem;
 		position: absolute;
-		top: 16px;
-		left: 16px;
+		top: 1rem;
+		left: 1rem;
 	}
 	li{
 		a{
-		color: black;
-		font-size: 13px;
-		padding: 0px 25px;
-	}
-	}
+      color: #000;
+      font-size: 13px;
+      padding: 0 1.6rem;
+    }
+  }
 }
 .btn{
-	background-color:$color-botones;
-	margin-top:25px;
+	background-color: $color-botones;
+	margin-top: 1.5rem;
 }
 .btn:hover{
-	background-color:$color-botones-hover;
+	background-color: $color-botones-hover;
 }
-.texto{
-	margin-top: 15px;
-}
+
 .seleccion{
-	border-bottom:$borde;
+	border-bottom: $borde;
   padding-bottom: 2rem;
 }
-.first{
-  padding-top: 2rem;
-}
 .mseleccion{
-	border:$borde;
-	border-radius: 5px;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	border: $borde;
+	border-radius: 0.3rem;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
 }
 .fechas{
-	border-left:$borde;
-	border-right:$borde;
+	border-left: $borde;
+	border-right: $borde;
 }
 .blanco{
 	background-color:white;
-	border-bottom:$borde;
+	border-bottom: $borde;
 }
 .fecha{
-	padding-top: 20px;
-	padding-bottom:20px;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
 }
 .titulo{
-	font-size:$titulo;
+	font-size: $titulo;
 	margin: $titulo-margin;
+  color: $txt-gray;
 }
 .bajada{
-	font-size:$titulo - 5;
-	span{
-		font-weight: bold;
-	}
+	font-size: $titulo - 5;
+  color: $txt-gray;
+  span{
+    font-weight: bold;
+  }
 }
 //carousel
 .main{
-  width:100%;
-  height:500px;
+  width: 100%;
+  height: 500px;
   margin: 0 auto;
 }
 .slider-outer{
-   height:100% !important;
-   
-  overflow:hidden;
+ height: 100% !important;
+
+ overflow: hidden;
 }
 .slider{
- 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .slide-image{
   width: 100%;
-    height: 100%;
-   display:block;
-    color: transparent;
-    background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
+  height: 100%;
+  display:block;
+  color: transparent;
+  background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
 }
 .slider .slide-item{
   float:left;
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 .clear{
-  clear:both;
+  clear: both;
 }
 
 .carousel-wrap {
-  margin: 90px auto;
+  margin: 5.6rem auto;
   padding: 0 5%;
   width: 80%;
   position: relative;
 }
 //carrusel pequeño
-::-webkit-scrollbar { width: 0; height: 0; }
+::-webkit-scrollbar { 
+  width: 0; 
+  height: 0; 
+}
 #slider {
   position: relative;
-  width: $width; height: $height;
+  width: $width; 
+  height: $height;
   margin: auto;
   .trigger {
     cursor: pointer;
     position: absolute;
-    width: 35px; height: 50%;
-    padding: 0; margin: 0;
-    outline: 0; border: 0;
+    width: 35px; 
+    height: 50%;
+    padding: 0; 
+    margin: 0;
+    outline: 0; 
+    border: 0;
     background: transparent;
-    &:hover { background: rgba(255,255,255,.5); }
+    &:hover { 
+      background: rgba(255,255,255,.5); 
+    }
     &:before {
       content: '';
       position: absolute;
@@ -127,7 +132,9 @@ nav{
       border-style: solid;
     }
   }
-  .prev { left: 0; bottom: 100px;
+  .prev { 
+    left: 0; 
+    bottom: 100px;
     &:before {
       left: 5px;
       border-width: 3px 0 0 3px;
@@ -135,7 +142,9 @@ nav{
       transform: rotate(-45deg);
     }
   }
-  .next { right: 0; bottom: 100px;
+  .next { 
+    right: 0; 
+    bottom: 100px;
     &:before {
       right: 5px;
       border-width: 3px 3px 0 0;
@@ -145,25 +154,37 @@ nav{
   }
   .frame {
     position: absolute;
-    top: 0; left: 35px; right: 35px; bottom: 0;
+    top: 0; left: 35px; 
+    right: 35px; 
+    bottom: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     overflow: hidden;
     .item {
       position: absolute;
-      top: 0; bottom: 0;
-      width: 25%; height: 100%;
+      top: 0; 
+      bottom: 0;
+      width: 25%; 
+      height: 100%;
       .inset {
         position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0;
         margin: $gap * 2 $gap;
         overflow: hidden;
-        .title { margin: 10px 0; font-weight: bold; text-align: center; }
-        .caption { font-size: 8pt;
-			img{
-				width:100%;
-			}
-         }
+        .title { 
+          margin: 10px 0; 
+          font-weight: bold; 
+          text-align: center; 
+        }
+        .caption { 
+          font-size: 8pt;
+          img{
+            width:100%;
+          }
+        }
       }
     }
   }

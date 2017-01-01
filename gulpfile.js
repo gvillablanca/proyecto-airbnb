@@ -24,5 +24,4 @@ gulp.task('style', function(){
 		.pipe(gulp.dest('dist/css/'));
 });
 
-
 gulp.task('default', ['script', 'style']);

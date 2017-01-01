@@ -1,5 +1,6 @@
 @import "materialize-src/sass/materialize.scss";
+@import '_mixin.scss';
 @import '_variables.scss';
 @import '_base.scss';
 @import '_search.scss';
-@importa '_filter.scss';
+@import '_range.scss';

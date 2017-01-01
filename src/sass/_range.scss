@@ -2,14 +2,12 @@
   width: 50%;
   margin: 0 auto;
 }
-
 .slider-area {
-  padding: 5px 40px;
-  border: 1px solid #ddd;
+  padding: 0.32rem 2.5rem;
+  border: $borde;
 }
-
 .slider {
-  margin-top: 50px;
-  padding: 10px;
-  color: black;
+  margin-top: 3rem;
+  padding: 0.6rem;
+  color: #000;
 }
