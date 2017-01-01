@@ -24,114 +24,115 @@
       </div>
     </nav>
   </header>
-  <!-- SELECCION FECHAS LLEGADA, SALIDA, Nº HUESPED -->
-  <div class="row">
-    <div class="col m7">
-      <div class="row seleccion first">
-        <div class="col s3 texto">
-          <h6>Fechas</h6>    
+    <!-- SELECCION FECHAS LLEGADA, SALIDA, Nº HUESPED -->
+  <section>
+    <div class="row">
+      <div class="col m7">
+        <div class="row seleccion first">
+          <div class="col s3 texto">
+            <h6>Fechas</h6>    
+          </div>
+          <div class="col m3">
+            <input type="date" class="datepicker" placeholder="Llegada">
+          </div>
+          <div class="col m3">
+            <input type="date" class="datepicker" placeholder="Salida">
+          </div>
+          <div class="col m3">
+            <select class="browser-default">
+              <option value="" disabled selected>Nº de Huéspedes</option>
+              <option value="1">1 Huésped</option>
+              <option value="2">2 Huéspedes</option>
+              <option value="3">3 Huéspedes</option>
+              <option value="3">4 Huéspedes</option>
+              <option value="3">5 Huéspedes</option>
+              <option value="3">6 Huéspedes</option>
+              <option value="3">7 Huéspedes</option>
+            </select>
+          </div>    
         </div>
-        <div class="col m3">
-          <input type="date" class="datepicker" placeholder="Llegada">
-        </div>
-        <div class="col m3">
-          <input type="date" class="datepicker" placeholder="Salida">
-        </div>
-        <div class="col m3">
-          <select class="browser-default">
-            <option value="" disabled selected>Nº de Huéspedes</option>
-            <option value="1">1 Huésped</option>
-            <option value="2">2 Huéspedes</option>
-            <option value="3">3 Huéspedes</option>
-            <option value="3">4 Huéspedes</option>
-            <option value="3">5 Huéspedes</option>
-            <option value="3">6 Huéspedes</option>
-            <option value="3">7 Huéspedes</option>
-          </select>
-        </div>    
       </div>
     </div>
-  </div>
-  <!-- SELECCION TIPO DE HABITACION -->
-  <div class="row">
-    <div class="col m7">
-      <div class="row seleccion">
-        <div class="col m3 texto">
-          <h6>Tipo de habitación</h6>    
-        </div>
-        <div class="col m3">
-          <div class="bg-gray center-align">
-            <div>
-              <i class="material-icons">&#xE88A;</i>
-              <span>Casa Entera</span>
-              <input type="checkbox" id="test1" />
-              <label for="test1"></label>      
+    <!-- SELECCION TIPO DE HABITACION -->
+    <div class="row">
+      <div class="col m7">
+        <div class="row seleccion">
+          <div class="col m3 texto">
+            <h6>Tipo de habitación</h6>    
+          </div>
+          <div class="col m3">
+            <div class="bg-gray center-align">
+              <div>
+                <i class="material-icons">&#xE88A;</i>
+                <span>Casa Entera</span>
+                <input type="checkbox" id="test1" />
+                <label for="test1"></label>      
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col m3">
-          <div class="bg-gray center-align">
-            <div>
-              <i class="material-icons">&#xE53A;</i>
-              <span>Hab. Privada</span>
-              <input type="checkbox" id="test2" />
-              <label for="test2"></label>      
+          <div class="col m3">
+            <div class="bg-gray center-align">
+              <div>
+                <i class="material-icons">&#xE53A;</i>
+                <span>Hab. Privada</span>
+                <input type="checkbox" id="test2" />
+                <label for="test2"></label>      
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col m3">
-          <div class="bg-gray center-align">
-            <div>
-              <i class="material-icons">&#xE16B;</i>
-              <span>Hab. Compartida</span>
-              <input type="checkbox" id="test3" />
-              <label for="test3"></label>      
+          <div class="col m3">
+            <div class="bg-gray center-align">
+              <div>
+                <i class="material-icons">&#xE16B;</i>
+                <span>Hab. Compartida</span>
+                <input type="checkbox" id="test3" />
+                <label for="test3"></label>      
+              </div>
             </div>
-          </div>
-        </div>     
+          </div>     
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- RANGO DE PRECIOS -->
-  <div class="row">
-    <div class="col m7">
-      <div class="row seleccion">
-        <div class="col m3 texto">
-          <h6>Rango de precios</h6>
-        </div>
-        <div class="col m9">
-          <div class="range-slider">
-              <input type="text" class="js-range-slider" value="" />
+    <!-- RANGO DE PRECIOS -->
+    <div class="row">
+      <div class="col m7">
+        <div class="row seleccion">
+          <div class="col m3 texto">
+            <h6>Rango de precios</h6>
+          </div>
+          <div class="col m9">
+            <div class="range-slider">
+                <input type="text" class="js-range-slider" value="" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- RESERVA -->
-  <div class="row">
-    <div class="col m7">
-      <div class="row seleccion">
-        <div class="col m3">
-          <h6>Reserva inmediata</h6>
-        </div>
-        <div class="col m6">
-          <h6>Anuncios que no requieren que el anfitrión acepte la solicitud.</h6>
-        </div>
-        <div class="col m3">
-          <div class="switch">
-            <label>
-              Off
-              <input type="checkbox">
-              <span class="lever"></span>
-              On
-            </label>
-          </div>         
+    <!-- RESERVA -->
+    <div class="row">
+      <div class="col m7">
+        <div class="row seleccion">
+          <div class="col m3">
+            <h6>Reserva inmediata</h6>
+          </div>
+          <div class="col m6">
+            <h6>Anuncios que no requieren que el anfitrión acepte la solicitud.</h6>
+          </div>
+          <div class="col m3">
+            <div class="switch">
+              <label>
+                Off
+                <input type="checkbox">
+                <span class="lever"></span>
+                On
+              </label>
+            </div>         
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
+  </section>
 
 
 
