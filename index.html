@@ -145,13 +145,14 @@
   </section>
 </div>
 <!-- Footer -->
+<div class="divider"></div>
 <footer>
-<div class="divider"></div> <!-- Línea divisora del footer según la página-->
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m3"> 
-        <div class="row">
-          <div class="col s6">
+ <!-- Línea divisora del footer según la página-->
+  <div class="container ">
+    <div class="row foot">
+      <div class="col m3"> 
+        <div class="row ">
+          <div class="col m6">
             <select>
               <option value="Bahasa Indonesia">Bahasa Indonesia</option>
               <option value="Bahasa Melayu">Bahasa Melayu</option>
@@ -181,7 +182,7 @@
               <option value="한국어">한국어</option>
             </select>
           </div> 
-          <div class="col s6"> 
+          <div class="col m6"> 
             <select>
               <option value="AED">AED</option>
               <option value="ARS">ARS</option>
@@ -230,41 +231,53 @@
             </select>
           </div>
         </div>
-        <div class="col m3"> <!-- <span> y <a> tiene un fontsize de 15px y font-family:Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif -->
-          <span>Airbnb</span>  
-          <a href="#">Acerca de</a>
-          <a href="#">Empleo</a>
-          <a href="#">Prensa</a>
-          <a href="#">Políticas</a>
-          <a href="#">Ayuda</a>
-          <a href="#">Diversidad y sentido de pertenencia</a>
         </div>
-        <div class="col m3">
-          <span>Descubre Airnbn</span>
-          <a href="#">Confianza y seguridad</a>
-          <a href="#">Crédito para viajar</a>
-          <a href="#">Airbnb Citizen</a>
-          <a href="#">Viajes de negocios</a>
-          <a href="#">Guías</a>
+        <div class="col m3 link-footer"> <!-- <span> y <a> tiene un fontsize de 15px y font-family:Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif -->
+          <h6 class="title-footer">Airbnb</h6>  
+          <p><a href="#">Acerca de</a></p>
+          <p><a href="#">Empleo</a></p>
+          <p><a href="#">Prensa</a></p>
+          <p><a href="#">Políticas</a></p>
+          <p><a href="#">Ayuda</a></p>
+          <p><a href="#">Diversidad y sentido de pertenencia</a></p>
         </div>
-        <div class="col m3">
-          <span>Hospedar</span>
-          <a href="#">Razones para hospedar</a>
-          <a href="#">Hospitalidad</a>
-          <a href="#">Ser un anfitrión responsable</a>
+        <div class="col m3 link-footer">
+          <h6 class="title-footer">Descubre Airnbn</h6>
+          <p><a href="#">Confianza y seguridad</a></p>
+          <p><a href="#">Crédito para viajar</a></p>
+          <p><a href="#">Airbnb Citizen</a></p>
+          <p><a href="#">Viajes de negocios</a></p>
+          <p><a href="#">Guías</a></p>
         </div>
+        <div class="col m3 link-footer">
+          <h6 class="title-footer">Hospedar</h6>
+          <p><a href="#">Razones para hospedar</a></p>
+          <p><a href="#">Hospitalidad</a></p>
+          <p><a href="#">Ser un anfitrión responsable</a></p>
+        </div>
+    </div>
+    <div class="divider foot"></div>
+    <div class="row">
+      <div class="col m1">
+        <div>
+            <img src="src/img/logo-small.png" alt="logo">
+        </div> 
+      </div>
+      <div class="col m2 footer-span">
+        <span> © Airbnb, Inc.</span>
+      </div>
+      <div class="col m3 link-footer">
+        
+      </div>
+      <div class="col m5 right link-footer">
+        <a href="#">Términos y Privacidad</a>
+        <a href="#">Mapa del sitio</a>
+        <a href="#" class="footer-redes fa fa-facebook"></a>
+        <a href="#" class="footer-redes fa fa-twitter"></a>
+        <a href="#" class="footer-redes fa fa-instagram"></a>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-        <span> <img src="src/img/favicon.ico" alt="logo"> © Airbnb, Inc.</span>
-        <a class="grey-text right" href="#!">Términos y Privacidad</a>
-        <a class="grey-text text-lighten-4 right" href="#!">Mapa del Sitio</a>
-        <a class="grey-text right" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a class="grey-text right" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a class="grey-text right" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
-    </div>
+
   </div>
 </footer>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>

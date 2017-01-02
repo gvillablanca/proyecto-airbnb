@@ -2,3 +2,7 @@
 	cursor: pointer;
 	color: $green;
 }
+@mixin txt-foot{
+	color: $txt-gray;
+	font-size: 13px;
+}
