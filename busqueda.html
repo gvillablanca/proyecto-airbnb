@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
   <title>Airbnb</title>
   <link rel="shortcut icon" href="src/img/favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,10 +12,11 @@
 <body>
   <!-- NAVBAR -->
   <header>
-  	<nav class="blanco">
+    <nav class="blanco">
       <div class="nav-wrapper">
-        <a href="index.html"><img src="src/img/favicon.ico"></a>
-
+      <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons hamb">menu</i></a>
+      <a href="index.html"><img src="src/img/favicon.ico"></a>
+      <input class="input-search" type="search" placeholder="Destino, Ciudad, Dirección">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">Conviértete en anfitrión</a></li>
           <li><a href="#">Ayuda</a></li>
@@ -24,22 +25,28 @@
         </ul>
       </div>
     </nav>
+    <ul id="slide-out" class="side-nav">
+      <li><a href="#">Conviértete en anfitrión</a></li>
+      <li><a href="#">Ayuda</a></li>
+      <li><a href="#">Regístrate</a></li>
+      <li><a href="#">Iniciar sesión</a></li>
+    </ul>
   </header>
   <!-- SELECCION FECHAS LLEGADA, SALIDA, Nº HUESPED -->
   <section>
     <div class="row">
-      <div class="col m7">
+      <div class="col m7 col s12">
         <div class="row seleccion first">
-          <div class="col m2 ">
+          <div class="col m2 col s12">
             <h6>Fechas</h6>    
           </div>
-          <div class="col m3">
+          <div class="col m3 col s6">
             <input type="date" class="datepicker" placeholder="Llegada">
           </div>
-          <div class="col m3">
+          <div class="col m3 col s6">
             <input type="date" class="datepicker" placeholder="Salida">
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <select class="browser-default">
               <option value="" disabled selected>Nº de Huéspedes</option>
               <option value="1">1 Huésped</option>
@@ -55,10 +62,10 @@
 
         <!-- SELECCION TIPO DE HABITACION -->
         <div class="row seleccion">
-          <div class="col m2 ">
+          <div class="col m2 col s6">
             <h6>Tipo de habitación</h6>    
           </div>
-          <div class="col m3">
+          <div class="col m3 col s6">
             <div class="bg-gray center-align">
               <div>
                 <i class="material-icons">&#xE88A;</i>
@@ -68,7 +75,7 @@
               </div>
             </div>
           </div>
-          <div class="col m3">
+          <div class="col m3 col s6">
             <div class="bg-gray center-align">
               <div>
                 <i class="material-icons">&#xE53A;</i>
@@ -78,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div class="col m3">
+          <div class="col m3 col s6">
             <div class="bg-gray center-align">
               <div>
                 <i class="material-icons">&#xE16B;</i>
@@ -92,10 +99,10 @@
         <!-- RANGO DE PRECIOS -->
 
         <div class="row seleccion">
-          <div class="col m2 ">
+          <div class="col m2 col s12">
             <h6>Rango de precios</h6>
           </div>
-          <div class="col m9">
+          <div class="col m9 col s12">
             <div class="range-slider">
               <input type="text" class="js-range-slider" value="" />
             </div>
@@ -104,13 +111,13 @@
 
         <!-- RESERVA -->
         <div class="row seleccion">
-          <div class="col m2">
+          <div class="col m2 col s12">
             <h6>Reserva inmediata</h6>
           </div>
-          <div class="col m6">
+          <div class="col m6 col s6">
             <h6>Anuncios que no requieren que el anfitrión acepte la solicitud.</h6>
           </div>
-          <div class="col m3">
+          <div class="col m3 col s6">
             <div class="switch">
               <label>
                 Off
@@ -124,7 +131,7 @@
       </div>
 
       <!-- ACA VA EL MAPA -->
-      <div class="col m5">
+      <div class="col m5 col s12">
         <h6>MAPAAAA</h6>
       </div>
       <!-- FIN MAPA -->
@@ -135,7 +142,7 @@
   <!-- FILTRO AVANZADO -->
   <section class="advanced-filter">
     <div class="row">
-      <div class="col m7">
+      <div class="col m7 col s12">
         <div class="row">
           <div class="col m2">
             <button class="filter">Filtros</button>
@@ -144,30 +151,30 @@
         <!-- DETALLES DEPARTAMENTOS + FOTOS -->
         <div class="conten">
         <div class="row">
-          <div class="col m12">
+          <div class="col m12 col s12">
             <p>Introduce las fechas para ver el precio total. Ten en cuenta que se aplicarán tarifas adicionales y es posible que se añadan impuestos.</p>
           </div>     
         </div>
         <div class="row">
-          <div class="col m6">
+          <div class="col m6 col s12">
             <div class="fotos">
                   <i class="material-icons heart">&#xE87E;</i>
                   <div class="dest">s/·6905 <span>Por mes</span></div>
                   <img class="responsive-img" src="src/img/foto1.png" alt="">
             </div>
             <div class="row">
-              <div class="col m3 center-align">
+              <div class="col m3 col s3 center-align">
                 <p class="new">NUEVO</p>
               </div>
-              <div class="col m9">
+              <div class="col m9 col s9">
                 <a href="#"><h6 class="dpto">Departamento pleno cent...</h6></a>
               </div>
             </div>
-                <div class="row ">
-                  <div class="col m8 info-detail">
+                <div class="row">
+                  <div class="col m8 col s8 info-detail">
                     <p class="info-dpto">Habitación privada - 2 Huéspedes</p>
                   </div>
-                  <div class="col m4 info-detail">
+                  <div class="col m4 col s4 info-detail">
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
@@ -176,22 +183,22 @@
                   </div>
                 </div>
           </div>
-          <div class="col m6">
+          <div class="col m6 col s12">
             <div class="fotos">
                   <i class="material-icons heart">&#xE87E;</i>
                   <div class="dest">s/·9490 <span>Por mes</span></div>
                   <img class="responsive-img" src="src/img/foto2.png" alt="">
             </div>
             <div class="row">
-              <div class="col m12">
+              <div class="col m12 col s12">
                 <a href="#"><h6 class="dpto">Santiago centro, metro, wifi, baño comparti...</h6></a>
               </div>
             </div>
                 <div class="row ">
-                  <div class="col m8 info-detail">
+                  <div class="col m8 col s8 info-detail">
                     <p class="info-dpto">Habitación privada - 1 Huésped</p>
                   </div>
-                  <div class="col m4 info-detail">
+                  <div class="col m4 col s4 info-detail">
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
@@ -203,22 +210,22 @@
         </div>
         
         <div class="row">
-          <div class="col m6">
+          <div class="col m6 col s12">
             <div class="fotos">
                   <i class="material-icons heart">&#xE87E;</i>
                   <div class="dest">s/·11259 <span>Por mes</span></div>
                   <img class="responsive-img" src="src/img/foto3.png" alt="">
             </div>
             <div class="row">
-              <div class="col m12">
+              <div class="col m12 col s12">
                 <a href="#"><h6 class="dpto">Departamento región de Valparaiso año nu...</h6></a>
               </div>
             </div>
                 <div class="row ">
-                  <div class="col m8 info-detail">
+                  <div class="col m8 col s8 info-detail">
                     <p class="info-dpto">Habitación privada - 6 huéspedes</p>
                   </div>
-                  <div class="col m4 info-detail">
+                  <div class="col m4 col s4 info-detail">
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
@@ -227,25 +234,25 @@
                   </div>
                 </div>
           </div>
-          <div class="col m6">
+          <div class="col m6 col s12">
             <div class="fotos">
                   <i class="material-icons heart">&#xE87E;</i>
                   <div class="dest">s/·11709 <span>Por mes</span></div>
                   <img class="responsive-img" src="src/img/foto4.png" alt="">
             </div>
             <div class="row">
-              <div class="col m3 center-align">
+              <div class="col m3 col s3 center-align">
                 <p class="new">NUEVO</p>
               </div>
-              <div class="col m9">
+              <div class="col m9 sol s9">
                 <a href="#"><h6 class="dpto">Departamento pleno centro histó...</h6></a>
               </div>
             </div>
                 <div class="row ">
-                  <div class="col m8 info-detail">
+                  <div class="col m8 col s8 info-detail">
                     <p class="info-dpto">Habitación privada - 5 huéspedes</p>
                   </div>
-                  <div class="col m4 info-detail">
+                  <div class="col m4 col s4 info-detail">
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
@@ -256,25 +263,25 @@
           </div>
         </div>
         <div class="row">
-          <div class="col m6">
+          <div class="col m6 col s12">
             <div class="fotos">
                   <i class="material-icons heart">&#xE87E;</i>
                   <div class="dest">s/·15287 <span>Por mes</span></div>
                   <img class="responsive-img" src="src/img/foto5.png" alt="">
             </div>
             <div class="row">
-              <div class="col m3 center-align">
+              <div class="col m3 col s3 center-align">
                 <p class="new">NUEVO</p>
               </div> 
-              <div class="col m9">
+              <div class="col m9 col s9">
                 <a href="#"><h6 class="dpto">Departamento Providencia, 2 b...</h6></a>
               </div>
             </div>
                 <div class="row ">
-                  <div class="col m8 info-detail">
+                  <div class="col m8 col s8 info-detail">
                     <p class="info-dpto">Habitación privada - 4 huéspedes</p>
                   </div>
-                  <div class="col m4 info-detail">
+                  <div class="col m4 col s4 info-detail">
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
@@ -283,25 +290,25 @@
                   </div>
                 </div>
           </div>
-          <div class="col m6">
+          <div class="col m6 col s12">
             <div class="fotos">
                   <i class="material-icons heart">&#xE87E;</i>
                   <div class="dest">s/·6709 <span>Por mes</span></div>
                   <img class="responsive-img" src="src/img/foto6.png" alt="">
             </div>
             <div class="row">
-              <div class="col m3 center-align">
+              <div class="col m3 col s3 center-align">
                 <p class="new">NUEVO</p>
               </div>
-              <div class="col m9">
+              <div class="col m9 col s9">
                 <a href="#"><h6 class="dpto">Casa novena región Temuco am...</h6></a>
               </div>
             </div>
-                <div class="row ">
-                  <div class="col m8 info-detail">
+                <div class="row">
+                  <div class="col m8 col s8 info-detail">
                     <p class="info-dpto">Habitación privada - 5 huéspedes</p>
                   </div>
-                  <div class="col m4 info-detail">
+                  <div class="col m4 col s4 info-detail">
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
                   <i class="material-icons star">&#xE838;</i>
@@ -316,12 +323,12 @@
       </div>
     </div>
     <div class="row ad-filter">
-      <div class="col m7">
+      <div class="col m7 col s12">
         <div class="row">
-          <div class="col m2">
+          <div class="col m2 col s12">
             <h6>Tamaño</h6>    
           </div>
-          <div class="col m3">
+          <div class="col m3 col s4">
             <select class="browser-default">
               <option value="" disabled selected>Habitaciones</option>
               <option value="1">1 dormitorio</option>
@@ -333,7 +340,7 @@
               <option value="3">7 dormitorios</option>
             </select>
           </div> 
-          <div class="col m3">
+          <div class="col m3 col s4">
             <select class="browser-default">
               <option value="" disabled selected>Baños</option>
               <option value="1">1 baño</option>
@@ -345,7 +352,7 @@
               <option value="3">4 baños</option>
             </select>
           </div> 
-          <div class="col m3">
+          <div class="col m3 col s4">
             <select class="browser-default">
               <option value="" disabled selected>Camas</option>
               <option value="1">1 cama</option>
@@ -359,32 +366,32 @@
           </div>      
         </div>
         <div class="row seleccion">
-          <div class="col m2">
+          <div class="col m2 col s12">
             <h6>Opciones</h6> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test4" />
             <label for="test4">Superhost</label> 
             <span class="view-more">Quédate en casa de anfitriones excepcionales. <a href="https://www.airbnb.cl/superhost">Más información</a></span>      
           </div>
         </div>
         <div class="row">
-          <div class="col m2">
+          <div class="col m2 col s12">
             <h6>Servicios</h6> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test5" />
             <label class="advanced" for="test5">Internet inalámbrico (wifi)</label> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test6" />
             <label class="advanced" for="test6">TV</label> 
           </div>
-          <div class="col m2">
+          <div class="col m2 col s8">
             <input type="checkbox" id="test7" />
             <label class="advanced" for="test7">Cocina</label> 
           </div>
-          <div class="col m2">
+          <div class="col m2 col s4">
             <span><i class="material-icons  down">&#xE5C5;</i></span>
             <span><i class="material-icons up">&#xE5C7;</i></span>
           </div>
@@ -392,80 +399,80 @@
         <!-- FILTRO OPCIONAL -->
         <div class="row filter-optional">
           <div class="divider optional"></div>
-          <div class="offset-m2 col m3 ">
+          <div class="offset-m2 col m3 col s12 ">
             <input type="checkbox" id="test17" />
             <label class="advanced" for="test17">Acceso disponible las 24 horas</label> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test18" />
             <label class="advanced" for="test18">Aire acondicionado</label> 
           </div>
-          <div class="col m3 optional">
+          <div class="col m3 col s12 optional">
             <input type="checkbox" id="test19" />
             <label class="advanced" for="test19">Apto para familias y niños</label> 
           </div>
           <div class="row">
-            <div class="offset-m2 col m3 ">
+            <div class="offset-m2 col m3 col s12 ">
               <input type="checkbox" id="test20" />
               <label class="advanced" for="test20">Calefacción</label> 
             </div>
-            <div class="col m3">
+            <div class="col m3 col s12">
               <input type="checkbox" id="test21" />
               <label class="advanced" for="test21">Champú</label> 
             </div>
-            <div class="col m3 optional">
+            <div class="col m3 optional col s12">
               <input type="checkbox" id="test22" />
               <label class="advanced" for="test22">Chimenea interior</label> 
             </div> 
           </div>
           <div class="row">
-            <div class="offset-m2 col m3 ">
+            <div class="offset-m2 col m3 col s12 ">
               <input type="checkbox" id="test23" />
               <label class="advanced" for="test23">Desayuno</label> 
             </div>
-            <div class="col m3">
+            <div class="col m3 col s12">
               <input type="checkbox" id="test24" />
               <label class="advanced" for="test24">Internet</label> 
             </div>
-            <div class="col m3 optional">
+            <div class="col m3 col s12 optional">
               <input type="checkbox" id="test25" />
               <label class="advanced" for="test25">Lavadora</label> 
             </div> 
           </div>
           <div class="row">
-            <div class="offset-m2 col m3 ">
+            <div class="offset-m2 col m3 col s12">
               <input type="checkbox" id="test36" />
               <label class="advanced" for="test36">Perchas</label> 
             </div>
-            <div class="col m3">
+            <div class="col m3 col s12">
               <input type="checkbox" id="test37"/>
               <label class="advanced" for="test37"> Pestillo en la puerta del dormitorio</label> 
             </div>
-            <div class="col m3 optional">
+            <div class="col m3 optional col s12">
               <input type="checkbox" id="test26" />
               <label class="advanced" for="test26">Plancha</label> 
             </div> 
           </div>
           <div class="row">
-            <div class="offset-m2 col m3 ">
+            <div class="offset-m2 col m3 col s12 ">
               <input type="checkbox" id="test27" />
               <label class="advanced" for="test27">Secador de pelo</label> 
             </div>
-            <div class="col m3">
+            <div class="col m3 col s12">
               <input type="checkbox" id="test28" />
               <label class="advanced" for="test28">Secadora</label> 
             </div>
-            <div class="col m3 optional">
+            <div class="col m3 optional col s12">
               <input type="checkbox" id="test29" />
               <label class="advanced" for="test29">TV por satélite</label> 
             </div> 
           </div>
           <div class="row">
-            <div class="offset-m2 col m3 ">
+            <div class="offset-m2 col m3 col s12">
               <input type="checkbox" id="test30" />
               <label class="advanced" for="test30">Timbre / Interfono inalámbrico</label> 
             </div>
-            <div class="col m3">
+            <div class="col m3 col s12">
               <input type="checkbox" id="test31" />
               <label class="advanced" for="test31">Zona para trabajar con portátiles</label> 
             </div>
@@ -474,18 +481,18 @@
         <!-- FIN FILTRO OPCIONAL -->
 
         <div class="row">
-          <div class="col m2">
+          <div class="col m2 col s12">
             <h6>Servicios</h6> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test8" />
             <label class="advanced" for="test8">Edificio con ascensor</label> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test9" />
             <label class="advanced" for="test9">Gimnasio</label> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test10" />
             <label class="advanced" for="test10">Piscina</label> 
           </div>
@@ -493,45 +500,45 @@
 
         <!-- FIN FILTRO OPCIONAL -->
         <div class="row">
-          <div class="col m2">
+          <div class="col m2 col s12">
             <h6>Normas de la casa</h6> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test11" />
             <label class="advanced" for="test11">Admite mascotas</label> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test12" />
             <label class="advanced" for="test12">Apto para eventos</label> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test13"/>
             <label class="advanced" for="test13">Apto para fumadores</label> 
           </div>
         </div>
         <div class="row">
-          <div class="col m2">
+          <div class="col m2 col s12">
             <h6>Idioma del anfitrión</h6> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test14"/>
             <label class="advanced" for="test14">Español</label> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test15"/>
             <label class="advanced" for="test15">English</label> 
           </div>
-          <div class="col m3">
+          <div class="col m3 col s12">
             <input type="checkbox" id="test16"/>
             <label class="advanced" for="test16">Français</label> 
           </div>
         </div>
         <!-- BOTONES CANCELAR - APLICAR -->
         <div class="row">
-          <div class="offset-m4 col m4 center-align">
+          <div class="offset-m4 col m4 col s6 center-align">
            <span class="filter add">Cancelar</span>
          </div>
-         <div class="col m4 center-align">
+         <div class="col m4 col s6 center-align">
            <span class="filter add apply red lighten-1">Aplicar filtros</span>
          </div>
        </div>
@@ -542,7 +549,7 @@
   <!-- PAGINACION -->
   <section>
   <div class="row">
-    <div class="col m7">
+    <div class="col m7 col s12">
       <div class="divider"></div>
       <p class="pag"> 1 - 12 de 80 anuncios</p>
         <ul class="pagination">
@@ -555,7 +562,6 @@
               <li class="waves-effect number"><a href="#!">...</a></li>
               <li class="waves-effect number"><a href="#!">10</a></li>
               <li class="waves-effect number"><a href="#!">11</a></li>
-              <li class="waves-effect number"><a href="#!">12</a></li>
               <li class="waves-effect"><a href="#!">
             <i class="material-icons">chevron_right</i></a>
           </li>

@@ -92,10 +92,12 @@ nav{
 }
 .clear{
   clear: both;
+
 }
 .container2{
   @extend .container;
   width:78%;
+
 }
 .carousel-wrap {
   margin: 5.6rem auto;
@@ -191,4 +193,8 @@ nav{
       }
     }
   }
+}
+.hamb{
+  color: #F57373;
+  margin-left: 2rem;
 }

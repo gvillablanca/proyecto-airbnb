@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
   <title>Airbnb</title>
   <link rel="shortcut icon" href="src/img/favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://use.fontawesome.com/7873633050.js"></script>
-  <link rel="stylesheet" href="dist/css/style.min.css">	
+  <link rel="stylesheet" href="dist/css/style.min.css"> 
 </head>
 <body>
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="#"><img src="src/img/favicon.ico"></a>
+      <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons hamb">menu</i></a>
+      <a href="index.html"><img src="src/img/favicon.ico"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">Conviértete en anfitrión</a></li>
           <li><a href="#">Ayuda</a></li>
@@ -23,6 +24,12 @@
         </ul>
       </div>
     </nav>
+    <ul id="slide-out" class="side-nav">
+      <li><a href="#">Conviértete en anfitrión</a></li>
+      <li><a href="#">Ayuda</a></li>
+      <li><a href="#">Regístrate</a></li>
+      <li><a href="#">Iniciar sesión</a></li>
+    </ul>
   </header>
   <!-- SECCION CAROUSEL -->
   <section>
@@ -37,26 +44,26 @@
     </div>
   </div>
 </section>
-<!-- SECCION DONDE CUANDO BUSCAR -->
+  <!-- SECCION DONDE CUANDO BUSCAR -->
 <div class="container">
   <section>
     <div class="row mseleccion">
-      <div class="col m4">
+      <div class="col m4 col s12">
         <label for="first_name">Dónde</label>
         <input placeholder="Destino, Ciudad, Dirección" id="first_name" type="text" class="validate">
       </div>
-      <div class="col m4 fechas">
-        <div class="col m6">
+      <div class="col m4 col s12 fechas">
+        <div class="col m6 col s6">
           <label for="first_name">Llegada</label>
           <input type="date" class="datepicker">
         </div>
-        <div class="col m6">
+        <div class="col m6 col s6">
           <label for="first_name">Salida</label>
           <input type="date" class="datepicker">
         </div>
       </div>
-      <div class="col m4">
-        <div class="col m6">
+      <div class="col m4 col s12">
+        <div class="col m6 col s12">
           <label for="first_name">Huéspedes</label>
           <select>
             <option value="" disabled selected></option>
@@ -65,13 +72,13 @@
             <option value="3">3 Huéspedes</option>
           </select>
         </div>
-        <div class="col m6">
+        <div class="col m6 col s12">
           <a href="busqueda.html" class="waves-effect waves-light btn">Buscar</a>
         </div>
       </div>
     </div>
   </section>
-      <div class="titulo">Experiencias</div>
+        <div class="titulo">Experiencias</div>
   </div>
   <section class="container2">
     <main id='slider'>
@@ -144,15 +151,16 @@
       </section>
     </main>
   </section>
+</div>
 <!-- Footer -->
 <div class="divider"></div>
 <footer>
  <!-- Línea divisora del footer según la página-->
   <div class="container ">
     <div class="row foot">
-      <div class="col m3"> 
+      <div class="col m3 col s12"> 
         <div class="row ">
-          <div class="col m6">
+          <div class="col m6 col s6">
             <select>
               <option value="Bahasa Indonesia">Bahasa Indonesia</option>
               <option value="Bahasa Melayu">Bahasa Melayu</option>
@@ -182,7 +190,7 @@
               <option value="한국어">한국어</option>
             </select>
           </div> 
-          <div class="col m6"> 
+          <div class="col m6 col s6"> 
             <select>
               <option value="AED">AED</option>
               <option value="ARS">ARS</option>
@@ -232,7 +240,7 @@
           </div>
         </div>
         </div>
-        <div class="col m3 link-footer"> <!-- <span> y <a> tiene un fontsize de 15px y font-family:Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif -->
+        <div class="col m3 col s4 link-footer"> <!-- <span> y <a> tiene un fontsize de 15px y font-family:Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif -->
           <h6 class="title-footer">Airbnb</h6>  
           <p><a href="#">Acerca de</a></p>
           <p><a href="#">Empleo</a></p>
@@ -241,7 +249,7 @@
           <p><a href="#">Ayuda</a></p>
           <p><a href="#">Diversidad y sentido de pertenencia</a></p>
         </div>
-        <div class="col m3 link-footer">
+        <div class="col m3 col s4 link-footer">
           <h6 class="title-footer">Descubre Airnbn</h6>
           <p><a href="#">Confianza y seguridad</a></p>
           <p><a href="#">Crédito para viajar</a></p>
@@ -249,7 +257,7 @@
           <p><a href="#">Viajes de negocios</a></p>
           <p><a href="#">Guías</a></p>
         </div>
-        <div class="col m3 link-footer">
+        <div class="col m3 col s4 link-footer">
           <h6 class="title-footer">Hospedar</h6>
           <p><a href="#">Razones para hospedar</a></p>
           <p><a href="#">Hospitalidad</a></p>
@@ -258,18 +266,17 @@
     </div>
     <div class="divider foot"></div>
     <div class="row">
-      <div class="col m1">
+      <div class="col m1 col s2">
         <div>
             <img src="src/img/logo-small.png" alt="logo">
         </div> 
       </div>
-      <div class="col m2 footer-span">
+      <div class="col m2 col s10 footer-span">
         <span> © Airbnb, Inc.</span>
       </div>
-      <div class="col m3 link-footer">
-        
+      <div class="col m3 link-footer">  
       </div>
-      <div class="col m5 right link-footer">
+      <div class="col m5 col s12 right link-footer">
         <a href="#">Términos y Privacidad</a>
         <a href="#">Mapa del sitio</a>
         <a href="#" class="footer-redes fa fa-facebook"></a>
