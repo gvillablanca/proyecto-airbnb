@@ -1,5 +1,4 @@
 
-
 //footer
 
 .new{
@@ -28,6 +27,10 @@
 	position: absolute;
 	z-index: 3;
 	padding: 0 1rem;
+	&:hover{
+		color:$color-botones;
+		cursor:pointer;
+	}
 }
 .dest{
 	background-color: $black;
@@ -44,6 +47,13 @@
 		font-size: 10px;
 	}
 }
+
+.cara{
+	width: 60px;
+    margin-left: 300px;
+    margin-top: -40px;
+}
+
 .pagination{
 	.number{
 		background-color: $bg !important;
