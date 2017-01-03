@@ -1,0 +1,61 @@
+.bg-gray{
+	border: $borde;
+	width: 100%;
+	padding: 1rem 0;
+	i{
+		font-size: 15px;
+	}
+	label{
+		margin-bottom: -0.6rem;
+	}
+	span{
+		font-size: 12px;
+	}
+}
+.first{
+  padding-top: 2rem;
+}
+.filter {
+	border: $borde;
+	border-radius: 0.32rem;
+	background-color: #FFF;
+	padding: 0.5rem 1.5rem;
+	display: block;
+	cursor: pointer;
+	&:focus{
+		background-color: #FFF;
+	}
+}
+.view-more{
+	font-size: 12px;
+}
+.advanced{
+	color: $txt-gray;
+}
+.down {
+	@include arrow-detail;
+}
+.up {
+	@include arrow-detail;
+}
+.hide{
+	display: block;
+}
+.ad-filter{
+	display: none;
+}
+.apply{
+	color: #FFF;
+}
+section{
+	color: $txt-gray;
+}
+.filter-optional{
+	display: none;
+}
+.filter-optional-two{
+	display: none;
+}
+.optional{
+	margin-bottom: 2rem;
+}
