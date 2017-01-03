@@ -2,7 +2,6 @@
 
 Airbnb es un marketplace para publicar, descubrir y reservar viviendas privadas. El nombre es un acrónimo de airbed and breakfast, cubre unas 2.000.000 propiedades en 192 países y 33.000 ciudades.
 
->>>>>>> master
 ### El Reto
 
 Replicar la página original de Airbnb utilizando la API de Google.
