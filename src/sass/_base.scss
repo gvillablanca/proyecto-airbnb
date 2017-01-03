@@ -92,8 +92,13 @@ nav{
 }
 .clear{
   clear: both;
-}
 
+}
+.container2{
+  @extend .container;
+  width:78%;
+
+}
 .carousel-wrap {
   margin: 5.6rem auto;
   padding: 0 5%;

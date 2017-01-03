@@ -2,6 +2,7 @@
 
 Airbnb es un marketplace para publicar, descubrir y reservar viviendas privadas. El nombre es un acrónimo de airbed and breakfast, cubre unas 2.000.000 propiedades en 192 países y 33.000 ciudades.
 
+>>>>>>> master
 ### El Reto
 
 Replicar la página original de Airbnb utilizando la API de Google.
@@ -10,6 +11,7 @@ Replicar la página original de Airbnb utilizando la API de Google.
 
 + Se utilizó la metodología Agile para así mejorar la eficiencia tanto en producción como en calidad de los productos finales.
 + Se utilizó como herramienta de planificación Trello, donde quedaban en manifiesto las desiciones tomadas como equipo y las tareas necesarias para llevar a cabo el proyecto.
+
 + Herramienta de comunicación técnica Slack, para que el trabajo remoto no marcara una distancia entre cada una de las integrantes del equipo manteniendose así la planificación, producción y calidad propuestas.
 
 ### Requerimientos Técnicos
