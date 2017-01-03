@@ -1,0 +1,21 @@
+$(document).ready(function(){
+	$('.filter').click(function(){
+		$('.ad-filter').show();
+	});
+	$('.add').click(function(){
+		$('.ad-filter').hide();
+	});
+	$('.down').click(function(){
+		$('.filter-optional').show();
+	});
+	$('.up').click(function(){
+		$('.filter-optional').hide();
+	});
+
+	$('.filter').click(function(){
+		$('.conten').hide();
+	});
+	$('.add').click(function(){
+		$('.conten').show();
+	});
+});

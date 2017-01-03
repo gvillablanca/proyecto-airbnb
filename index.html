@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <title>Airbnb</title>
+  <link rel="shortcut icon" href="src/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://use.fontawesome.com/7873633050.js"></script>
+  <link rel="stylesheet" href="dist/css/style.min.css">	
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#"><img src="src/img/favicon.ico"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Conviértete en anfitrión</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Regístrate</a></li>
+          <li><a href="#">Iniciar sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- SECCION CAROUSEL -->
+  <section>
+   <div class="main">
+    <div class="slider-outer">
+      <div class="slider">
+        <div class="slide-item"><span class="slide-image" style="background-image: url(src/img/Captura1.jpg);"></span></div>
+        <div class="slide-item"><span class="slide-image" style="background-image: url(src/img/Captura2.jpg);"></span></div>
+        <div class="slide-item"><span class="slide-image" style="background-image: url(src/img/Captura3.jpg);"></span></div>
+        <div class="slide-item"><span class="slide-image" style="background-image: url(src/img/Captura4.jpg);"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECCION DONDE CUANDO BUSCAR -->
+<div class="container">
+  <section>
+    <div class="row mseleccion">
+      <div class="col m4">
+        <label for="first_name">Dónde</label>
+        <input placeholder="Destino, Ciudad, Dirección" id="first_name" type="text" class="validate">
+      </div>
+      <div class="col m4 fechas">
+        <div class="col m6">
+          <label for="first_name">Llegada</label>
+          <input type="date" class="datepicker">
+        </div>
+        <div class="col m6">
+          <label for="first_name">Salida</label>
+          <input type="date" class="datepicker">
+        </div>
+      </div>
+      <div class="col m4">
+        <div class="col m6">
+          <label for="first_name">Huéspedes</label>
+          <select>
+            <option value="" disabled selected></option>
+            <option value="1">1 Huésped</option>
+            <option value="2">2 Huéspedes</option>
+            <option value="3">3 Huéspedes</option>
+          </select>
+        </div>
+        <div class="col m6">
+          <a href="busqueda.html" class="waves-effect waves-light btn">Buscar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="titulo">Experiencias</div>
+    <main id='slider'>
+      <button class='trigger prev'></button>
+      <button class='trigger next'></button>
+      <section class='frame'>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru1.jpg">
+              <div class="bajada"><span>$23519 CLP</span> Singing &#38; karaoke experience</div>
+            </div>
+          </div>
+        </article>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru2.jpg">
+              <div class="bajada"><span>$83998 CLP</span> Service &#38; building · 2 días</div>
+            </div>
+          </div>
+        </article>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru3.jpg">
+              <div class="bajada"><span>$23519 CLP</span> Singing &#38; karaoke experience</div>
+            </div>
+          </div>
+        </article>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru4.jpg">
+              <div class="bajada"><span>$23519 CLP</span> Singing &#38; karaoke experience</div>
+            </div>
+          </div>
+        </article>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru5.jpg">
+              <div class="bajada"><span>$23519 CLP</span> Singing &#38; karaoke experience</div>
+            </div>
+          </div>
+        </article>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru6.jpg">
+              <div class="bajada"><span>$23519 CLP</span> Singing &#38; karaoke experience</div>
+            </div>
+          </div>
+        </article>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru7.jpg">
+              <div class="bajada"><span>$167996 CLP</span> Lgbt advocacy &#38; neighborhood · 2 días</div>
+            </div>
+          </div>
+        </article>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru8.jpg">
+              <div class="bajada"><span>$23519 CLP</span> Singing &#38; karaoke experience</div>
+            </div>
+          </div>
+        </article>
+        <article class='item'>
+          <div class='inset'>
+            <div class='caption'><img src="src/img/carru9.jpg">
+              <div class="bajada"><span>$23519 CLP</span> Singing &#38; karaoke experience</div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </section>
+</div>
+<!-- Footer -->
+<div class="divider"></div>
+<footer>
+ <!-- Línea divisora del footer según la página-->
+  <div class="container ">
+    <div class="row foot">
+      <div class="col m3"> 
+        <div class="row ">
+          <div class="col m6">
+            <select>
+              <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+              <option value="Bahasa Melayu">Bahasa Melayu</option>
+              <option value="Català">Català</option>
+              <option value="Dansk">Dansk</option>
+              <option value="Deutsch">Deutsch</option>
+              <option value="English">English</option>
+              <option value="Español" selected="selected">Español</option>
+              <option value="Eλληνικά">Eλληνικά</option>
+              <option value="Français">Français</option>
+              <option value="Italiano">Italiano</option>
+              <option value="Magyar">Magyar</option>
+              <option value="Nederlands">Nederlands</option>
+              <option value="Norsk">Norsk</option>
+              <option value="Polski">Polski</option>
+              <option value="Português">Português</option>
+              <option value="Suomi">Suomi</option>
+              <option value="Svenska">Svenska</option>
+              <option value="Türkçe">Türkçe</option>
+              <option value="Íslenska">Íslenska</option>
+              <option value="Čeština">Čeština</option>
+              <option value="Русский">Русский</option>
+              <option value="ภาษาไทย">ภาษาไทย</option>
+              <option value="中文 (简体)">中文 (简体)</option>
+              <option value="中文 (繁體)">中文 (繁體)</option>
+              <option value="日本語">日本語</option>
+              <option value="한국어">한국어</option>
+            </select>
+          </div> 
+          <div class="col m6"> 
+            <select>
+              <option value="AED">AED</option>
+              <option value="ARS">ARS</option>
+              <option value="AUD">AUD</option>
+              <option value="BGN">BGN</option>
+              <option value="BRL">BRL</option>
+              <option value="CAD">CAD</option>
+              <option value="CHF">CHF</option>
+              <option value="CLP" selected="selected">CLP</option>
+              <option value="CNY">CNY</option>
+              <option value="COP">COP</option>
+              <option value="CRC">CRC</option>
+              <option value="CZK">CZK</option>
+              <option value="DKK">DKK</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="HKD">HKD</option>
+              <option value="HRK">HRK</option>
+              <option value="HUF">HUF</option>
+              <option value="IDR">IDR</option>
+              <option value="ILS">ILS</option>
+              <option value="INR">INR</option>
+              <option value="JPY">JPY</option>
+              <option value="KRW">KRW</option>
+              <option value="MAD">MAD</option>
+              <option value="MXN">MXN</option>
+              <option value="MYR">MYR</option>
+              <option value="MYR">NOK</option>
+              <option value="MYR">NZD</option>
+              <option value="MYR">PEN</option>
+              <option value="MYR">PHP</option>
+              <option value="MYR">PLN</option>
+              <option value="MYR">RON</option>
+              <option value="MYR">RUB</option>
+              <option value="MYR">SAR</option>
+              <option value="MYR">SEK</option>
+              <option value="MYR">SGD</option>
+              <option value="MYR">THB</option>
+              <option value="MYR">TRY</option>
+              <option value="MYR">TWD</option>
+              <option value="MYR">UAH</option>
+              <option value="MYR">USD</option>
+              <option value="MYR">UYU</option>
+              <option value="MYR">VND</option>
+              <option value="MYR">ZAR</option>
+            </select>
+          </div>
+        </div>
+        </div>
+        <div class="col m3 link-footer"> <!-- <span> y <a> tiene un fontsize de 15px y font-family:Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif -->
+          <h6 class="title-footer">Airbnb</h6>  
+          <p><a href="#">Acerca de</a></p>
+          <p><a href="#">Empleo</a></p>
+          <p><a href="#">Prensa</a></p>
+          <p><a href="#">Políticas</a></p>
+          <p><a href="#">Ayuda</a></p>
+          <p><a href="#">Diversidad y sentido de pertenencia</a></p>
+        </div>
+        <div class="col m3 link-footer">
+          <h6 class="title-footer">Descubre Airnbn</h6>
+          <p><a href="#">Confianza y seguridad</a></p>
+          <p><a href="#">Crédito para viajar</a></p>
+          <p><a href="#">Airbnb Citizen</a></p>
+          <p><a href="#">Viajes de negocios</a></p>
+          <p><a href="#">Guías</a></p>
+        </div>
+        <div class="col m3 link-footer">
+          <h6 class="title-footer">Hospedar</h6>
+          <p><a href="#">Razones para hospedar</a></p>
+          <p><a href="#">Hospitalidad</a></p>
+          <p><a href="#">Ser un anfitrión responsable</a></p>
+        </div>
+    </div>
+    <div class="divider foot"></div>
+    <div class="row">
+      <div class="col m1">
+        <div>
+            <img src="src/img/logo-small.png" alt="logo">
+        </div> 
+      </div>
+      <div class="col m2 footer-span">
+        <span> © Airbnb, Inc.</span>
+      </div>
+      <div class="col m3 link-footer">
+        
+      </div>
+      <div class="col m5 right link-footer">
+        <a href="#">Términos y Privacidad</a>
+        <a href="#">Mapa del sitio</a>
+        <a href="#" class="footer-redes fa fa-facebook"></a>
+        <a href="#" class="footer-redes fa fa-twitter"></a>
+        <a href="#" class="footer-redes fa fa-instagram"></a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script type="text/javascript" src="dist/js/script.min.js"></script>
+</body>
+</html>

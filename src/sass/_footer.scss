@@ -1,0 +1,26 @@
+.link-footer{
+	a{
+		@include txt-foot;
+		margin-right: 1rem;
+
+		&:hover{
+			color: lighten($txt-gray, 10%);
+		}
+	}
+	p{
+		margin-bottom: -1rem;
+	}
+	
+}
+.title-footer{
+	color: $txt-gray;
+	font-weight: bold;
+}
+.foot{
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+.footer-span{
+		color: $txt-gray;
+		margin-top: 0.2rem;
+}
