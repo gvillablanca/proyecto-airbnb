@@ -6,3 +6,15 @@
 	color: $txt-gray;
 	font-size: 13px;
 }
+@mixin new_tag{
+	font-size: 10px;
+	background-color: $green;
+	color: white;
+	padding: 0.5rem;
+	border-radius: 3px;
+}
+@mixin star{
+	font-size: 13px;
+	margin-top: 1rem;
+	color: $green;
+}

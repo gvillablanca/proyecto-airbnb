@@ -12,10 +12,10 @@ $(document).ready(function(){
 		$('.filter-optional').hide();
 	});
 
-	$('.down-two').click(function(){
-		$('.filter-optional-two').show();
+	$('.filter').click(function(){
+		$('.conten').hide();
 	});
-	$('.up-two').click(function(){
-		$('.filter-optional-two').hide();
+	$('.add').click(function(){
+		$('.conten').show();
 	});
 });

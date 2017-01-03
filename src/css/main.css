@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6355,6 +6355,25 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+.text {
+  text-align: center; }
+
+.text p {
+  color: #767676; }
+
+.title span a {
+  font-size: 15px;
+  letter-spacing: 0.2px; }
+
+.rating i {
+  color: #008489;
+  padding-left: 30px; }
+
+a {
+  color: #767676; }
+
+h5 {
+  font-size: 1.20rem; }
 nav {
   background-color: transparent;
   box-shadow: none; }
@@ -6527,5 +6546,6 @@ nav {
           font-size: 8pt; }
           #slider .frame .item .inset .caption img {
             width: 100%; }
+
 
 /*# sourceMappingURL=main.css.map */
