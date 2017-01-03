@@ -6,6 +6,13 @@ $(document).ready(function() {
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
 	});
+
+  $('.button-collapse').sideNav({
+    menuWidth: 200, 
+    edge: 'right', 
+    closeOnClick: true, 
+    draggable: true
+  });
 	
 });
 
