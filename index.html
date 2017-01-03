@@ -54,12 +54,12 @@
       </div>
       <div class="col m4 col s12 fechas">
         <div class="col m6 col s6">
-          <label for="first_name">Llegada</label>
-          <input type="date" class="datepicker">
+          <label for="llegada">Llegada</label>
+          <input type="date" class="datepicker" id="llegada">
         </div>
         <div class="col m6 col s6">
-          <label for="first_name">Salida</label>
-          <input type="date" class="datepicker">
+          <label for="salida">Salida</label>
+          <input type="date" class="datepicker" id="salida">
         </div>
       </div>
       <div class="col m4 col s12">
@@ -73,7 +73,7 @@
           </select>
         </div>
         <div class="col m6 col s12">
-          <a href="busqueda.html" class="waves-effect waves-light btn">Buscar</a>
+          <a href="busqueda.html" class="waves-effect waves-light btn" id="aceptar">Buscar</a>
         </div>
       </div>
     </div>
@@ -429,6 +429,8 @@
 </footer>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4lPDRoY76DXNqlEhmedbGbxbNBuLd8mI&libraries=places&callback=initAutocomplete"
+        async defer></script>
 <script type="text/javascript" src="dist/js/script.min.js"></script>
 </body>
 </html>

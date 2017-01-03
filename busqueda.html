@@ -16,7 +16,7 @@
       <div class="nav-wrapper">
       <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons hamb">menu</i></a>
       <a href="index.html"><img src="src/img/favicon.ico"></a>
-      <input class="input-search" type="search" placeholder="Destino, Ciudad, Dirección">
+      <input class="input-search" type="search" placeholder="Destino, Ciudad, Dirección" id="buscar_dos">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">Conviértete en anfitrión</a></li>
           <li><a href="#">Ayuda</a></li>
@@ -41,10 +41,10 @@
             <h6>Fechas</h6>    
           </div>
           <div class="col m3 col s6">
-            <input type="date" class="datepicker" placeholder="Llegada">
+            <input type="date" class="datepicker" placeholder="Llegada" id="llegada_dos">
           </div>
           <div class="col m3 col s6">
-            <input type="date" class="datepicker" placeholder="Salida">
+            <input type="date" class="datepicker" placeholder="Salida" id="salida_dos">
           </div>
           <div class="col m3 col s12">
             <select class="browser-default">
@@ -132,9 +132,32 @@
 
       <!-- ACA VA EL MAPA -->
       <div class="col m5 col s12">
-        <h6>MAPAAAA</h6>
+       <div id="map"></div>
+  <div class="hide">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
       </div>
-      <!-- FIN MAPA -->
 
     </div>
   </section>
@@ -580,6 +603,9 @@
 
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4lPDRoY76DXNqlEhmedbGbxbNBuLd8mI&libraries=places&callback=initMap"
+        async defer></script>
 <script type="text/javascript" src="dist/js/script.min.js"></script>
+<script type="text/javascript" src="src/js/mapa.js"></script>
 </body>
 </html>
