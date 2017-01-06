@@ -2,19 +2,25 @@ $(document).ready(function(){
   var direccion = localStorage.getItem('calleSAve');
   var fechaDesde = localStorage.getItem('desdeSAve');
   var fechaHasta = localStorage.getItem('hastaSave');
-  $('#buscar_dos').attr('value', direccion);
-  $('#llegada_dos').attr('value', fechaDesde);
-  $('#salida_dos').attr('value', fechaHasta);
+  $('#buscar_dos').val(direccion);
+  $('#llegada_dos').val(fechaDesde);
+  $('#salida_dos').val(fechaHasta);
   Materialize.updateTextFields();
 
+ 
+  if(mapReady){
+  }
 });
 
-var map, places, infoWindow;
+var map, infoWindow;
 var markers = [];
 var autocomplete;
 var MARKER_PATH = 'https://maps.gstatic.com/intl/en_us/mapfiles/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
-var newCentro =  JSON.parse(localStorage.getItem('newCenter'));
+var newCentro;
+var mapReady = false;
+
+//funcion autocompletar pagina de inicio
 
 function initAutocomplete(){
   //autocompleta el input con direccion
@@ -25,7 +31,10 @@ function initAutocomplete(){
   // fields in the form.
   places = new google.maps.places.PlacesService(map);
 
-  autocomplete.addListener('place_changed', guardarCentro);
+  //autocomplete.addListener('place_changed', guardarCentro);
+  google.maps.event.addListener(autocomplete, 'place_changed', guardarCentro);
+  //console.log('centro');
+  guardarCentro();
 }
 
 function guardarCentro() {
@@ -35,17 +44,20 @@ function guardarCentro() {
 
   if (place.geometry) {
     centro=place.geometry.location;
-    console.log(centro);
+    console.log('centro');
     localStorage.setItem('newCenter', JSON.stringify(centro));
   }
 }
 
-var miCentro = newCentro;
+
+//funcion mapa pagina de busqueda 
 
 function initMap() {
+  newCentro = JSON.parse(localStorage.getItem('newCenter'));
+
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
-    center: miCentro,
+    center: newCentro,
     mapTypeControl: false,
     panControl: false,
     zoomControl: true,
@@ -59,9 +71,13 @@ function initMap() {
     autocomplete = new google.maps.places.Autocomplete(destination_input);
     places = new google.maps.places.PlacesService(map);
 
-    autocomplete.addListener('place_changed', onPlaceChanged);
+    google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
+    console.log('map');
+    mapReady=true;
 }
+
 function onPlaceChanged() {
+  console.log('placechange');
   var place = autocomplete.getPlace();
   if (place.geometry) {
     map.panTo(place.geometry.location);
@@ -71,9 +87,11 @@ function onPlaceChanged() {
     document.getElementById('buscar_dos').placeholder = 'Enter a city';
   }
 }
+
 // Search for hotels in the selected city, within the viewport of the map.
+
 function search() {
-  var search = {
+   var search = {
     bounds: map.getBounds(),
     types: ['lodging']
   };

@@ -39,10 +39,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-	var llegadaValDos = $('#llegada-dos');
-	var salidaValDos =$('#salida_dos');
-
-	llegadaValDos.pickadate({
+	var llegadaValDos = $('#llegada_dos').pickadate({
 	    selectMonths: true,// Creates a dropdown to control month
 	    min: true, // permite seleccionar solo desde el dia de hoy
 	    selectYears: 15,// Creates a dropdown of 15 years to control year
@@ -51,11 +48,10 @@ $(document).ready(function(){
 
     var llegadaDos = llegadaValDos.pickadate('picker'); 
 
-	salidaValDos.pickadate({
+	var salidaValDos =$('#salida_dos').pickadate({
 	    selectMonths: true,// Creates a dropdown to control month
 	    min: true, // permite seleccionar solo desde el dia de hoy
 	    selectYears: 15, // Creates a dropdown of 15 years to control year
-	    closeOnSelect: true
   		});
 
     var salidaDos = salidaValDos.pickadate('picker');
