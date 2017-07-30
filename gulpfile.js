@@ -17,7 +17,7 @@ gulp.task('script', function(){
 });
 
 gulp.task('style', function(){
-	gulp.src(['src/sass/main.scss', 'src/css/*.css'])
+	gulp.src(['src/sass/materialize-src/sass/materialize.scss','src/sass/main.scss', 'src/css/*.css'])
 		.pipe(sass().on('error', sass.logError))
 		.pipe(minifyCSS())
 		.pipe(concat('style.min.css'))
